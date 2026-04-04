@@ -1,0 +1,11 @@
+Variable,IV,Predictive_Power
+RevolvingUtilizationOfUnsecuredLines,1.1101,Suspicious — check leakage
+NumberOfTime30-59DaysPastDueNotWorse,0.427,Strong
+age,0.2418,Medium
+DebtRatio,0.0764,Weak
+MonthlyIncome,0.0676,Weak
+NumberOfOpenCreditLinesAndLoans,0.0667,Weak
+NumberOfDependents,0.0236,Weak
+NumberRealEstateLoansOrLines,0.0128,Useless — drop
+NumberOfTimes90DaysLate,0.0,Useless — drop
+NumberOfTime60-89DaysPastDueNotWorse,0.0,Useless — drop
