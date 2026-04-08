@@ -1,0 +1,5 @@
+Metric,Train,Test,Benchmark,Result
+KS Statistic,49.56%,49.24%,40-60% = Good,Good
+Gini Coefficient,62.70%,63.19%,50-70% = Good,Good
+AUC-ROC,0.8135,0.8159,0.75-0.85 = Good,Good
+PSI,0.0001,-,<0.10 = Stable,Stable
