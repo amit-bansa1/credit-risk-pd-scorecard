@@ -247,6 +247,13 @@ NumberOfTimes90DaysLate and NumberOfTime60-89DaysPastDueNotWorse showed zero IV 
 **6. Score range**
 Score range (378–560) is narrower than commercial bureau scores (300–900) due to limited variable set. Direct comparison with CIBIL or FICO scores is not appropriate.
 
+**7. Binning methodology**
+WoE binning used automated optimal binning (OptimalBinning library) rather than the manual fine-to-coarse progression used in production bank models. Production scorecards involve manual review of fine bins (20-50 bins per variable), monotonicity enforcement, minimum bin size validation (≥5% population per bin), and documented business rationale for each bin boundary decision.
+
+**8. Hyperparameter decisions**
+This is a logistic regression model so hyperparameter tuning is limited to regularisation strength (C=0.5). In a production environment, C would 
+be selected via cross-validated grid search rather than set to a reasonable default.
+
 ---
 
 ## 7. Real-World Data Context
